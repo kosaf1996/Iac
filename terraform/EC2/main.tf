@@ -1,7 +1,7 @@
 
 #EC2
 resource "aws_instance" "example" {
-  ami                    = "ami-0ff91d792f1b9da38" #AMI ID
+  ami                    = "" #AMI ID
   instance_type          = "t2.micro"              #instance_type
   vpc_security_group_ids = ["${aws_security_group.instance.id}"] #생성되는 보안그룹 ID
 
