@@ -10,7 +10,7 @@ variable "cluster_name" {
 
 variable "db_remote_state_bucket" {
   description = "The name of the S3 bucket for the database's remote state"
-  default = "terraform-repository-0001"
+  default = "" #S3 Bucket Name
 }
 
 variable "db_remote_state_key" { #DB명 
