@@ -1,6 +1,6 @@
 #ASG 시작 구성 
 resource "aws_launch_configuration" "example" {
-  image_id        = "ami-0ff91d792f1b9da38"
+  image_id        = "" #AMI ID
   instance_type   = "${var.instance_type}"
   security_groups = ["${aws_security_group.instance.id}"]
   user_data       = "${data.template_file.user_data.rendered}"
